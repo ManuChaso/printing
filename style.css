@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Cantarell', sans-serif;
+}
+
+:root {
+ /* FONT COLORS */
+ --primary-color-fp: #db1970;
+ --secondary-color-fp: #fff;
+ --tertiary-color-fp: #5db5bd;
+ --quaternary-color-fp: #0000007f;
+ --quinary-color-fp: black;
+
+ /*FONT SIZE*/
+ --font-size-fp-s: 12px;
+ --font-size-fp-m: 14px;
+ --font-size-fp-l: 16px;
+ --font-size-fp-xl: 24px;
+ --font-size-fp-xxl: 30px;
+
+ /* BACKGROUND COLORS */
+ --background-color-1-fp: #fff;
+ --background-color-2-fp: #0000007f;
+ --background-color-3-fp: #ecececbb;
+
+ /* SPACINGS */
+ --padding-fp-s: 0px;
+ --padding-fp-m: 10px;
+ --padding-fp-l: 15px;
+ --padding-fp-xl: 20px;
+ --padding-fp-xl: 30px;
+ --padding-fp-xxl: 50px;
+
+ --gap-fp-s: 10px;
+ --gap-fp-m: 15px;
+ --gap-fp-l: 20px;
+ --gap-fp-xl: 30px;
+ --gap-fp-xxl: 60px;
+}
+
+body {
+ background-color: var(--background-color-1-fp);
+ min-height: 100svh;
+}
+
+.text {
+ background-color: var(--primary-color-fp);
+ color: var(--secondary-color-fp);
+ padding: var(--padding-fp-m);
+ margin-top: auto;
+ text-align: center;
+ font-size: var(--font-size-fp-m);
+ font-weight: bold;
+}
+
+#brand {
+ display: flex;
+ color: var(--primary-color-fp);
+ font-size: var(--font-size-fp-xxl);
+ padding: var(--padding-fp-xl);
+}
+
+span {
+ font-size: var(--font-size-fp-l);
+}
+
+.container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: var(--gap-fp-xl);
+}
+
+.dynamic-image {
+ display: block;
+ max-width: 100%;
+}
+
+#caret-down {
+ font-size: var(--font-size-fp-l);
+}
+
+#caret-down:hover {
+ color: var(--tertiary-color-fp);
+ cursor: pointer;
+}
+
+#menu {
+ background-color: var(--background-color-1-fp);
+ padding: var(--padding-fp-m);
+ position: absolute;
+ display: none;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ right: 35px;
+ width: 180px;
+}
+
+button {
+ background: none;
+ border: none;
+ cursor: pointer;
+ font-size: var(--font-size-fp-xl);
+ padding: var(--padding-fp-m);
+}
+
+button i:hover {
+ color: var(--tertiary-color-fp);
+}
+
+.products {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+ gap: var(--gap-fp-s);
+ padding: var(--padding-fp-m);
+}
+
+.product-card {
+ padding: var(--padding-fp-xl);
+ padding-bottom: 15px;
+ text-align: center;
+}
+
+.product-card:hover {
+ box-shadow: 0 0 20px var(--background-color-2-fp);
+ transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card img {
+ max-width: 100%;
+ height: auto;
+ padding-bottom: 15px;
+}
+
+.buy-button {
+ color: var(--tertiary-color-fp);
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: var(--font-size-fp-s);
+ cursor: pointer;
+}
+
+.buy-button:hover {
+ background-color: var(--background-color-3-fp);
+ transition: 0.3s;
+}
+
+#noProductsMessage {
+ display: none;
+ background-color: var(--primary-color-fp);
+ color: var(--secondary-color-fp);
+ text-align: center;
+ padding: var(--padding-fp-m);
+ margin-top: 20px;
+ width: 100%;
+}
+
+#suggestedProducts {
+ display: none;
+ background-color: var(--primary-color-fp);
+ color: var(--secondary-color-fp);
+ padding: var(--padding-fp-m);
+ text-align: center;
+ height: 40px;
+ margin-top: 20px;
+}
+
+nav {
+ margin: 20px 0;
+ text-align: center;
+}
+
+nav ul {
+ list-style-type: none;
+ padding: var(--padding-fp-s);
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ gap: var(--gap-fp-xxl);
+}
+
+nav ul li a {
+ display: inline;
+ text-decoration: none;
+ color: var(--quinary-color-fp);
+ font-size: var(--font-size-fp-l);
+ transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+ color: var(--primary-color-fp);
+}
+
+#footer-container {
+ background-color: var(--background-color-3-fp);
+}
+
+#footer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: var(--padding-fp-xl);
+ text-align: center;
+}
+
+#footer .footer-sections {
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ margin-bottom: 20px;
+}
+
+#footer .footer-section {
+ font-size: var(--font-size-fp-m);
+ margin: 0 20px;
+}
+
+#footer .footer-section ul {
+ list-style-type: none;
+ padding: var(--padding-fp-s);
+}
+
+#footer .footer-section ul li {
+ margin-bottom: 5px;
+ cursor: pointer;
+ color: var(--quaternary-color-fp);
+ font-size: var(--font-size-fp-s);
+}
+
+#footer .social-icons {
+ margin: 20px 0;
+}
+
+#footer .social-icons a {
+ margin: 0 10px;
+ color: var(--quinary-color-fp);
+ font-size: var(--font-size-fp-xl);
+ text-decoration: none;
+}
+
+#footer .social-icons a:hover {
+ color: var(--primary-color-fp);
+}
+
+#footer p {
+ font-size: var(--font-size-fp-s);
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+ #brand {
+  justify-content: center;
+  padding: var(--padding-fp-l);
+  cursor: pointer;
+ }
+
+ .container {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #nav-container ul {
+  background-color: var(--background-color-1-fp);
+  flex-direction: column;
+  gap: var(--gap-fp-s);
+ }
+
+ #caret-down {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ #menu {
+  position: sticky;
+  margin-bottom: 20px;
+ }
+
+ .products {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 10px;
+ }
+
+ #footer .footer-sections {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #footer .footer-section {
+  margin: 0 0 20px 0;
+ }
+}
+
+@media (max-width: 600px) {
+ #brand {
+  justify-content: center;
+  padding: var(--padding-fp-l);
+  cursor: pointer;
+ }
+
+ .container {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #menu {
+  position: sticky;
+  margin-bottom: 20px;
+ }
+
+ #nav-container ul {
+  background-color: var(--background-color-1-fp);
+  flex-direction: column;
+  gap: var(--gap-fp-s);
+ }
+
+ #brand.active + #nav-container {
+  display: block;
+ }
+
+ #caret-down {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .products {
+  grid-template-columns: 1fr;
+  padding: var(--padding-fp-xl);
+ }
+
+ #footer .footer-sections {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #footer .footer-section {
+  margin: 0 0 20px 0;
+ }
+}
