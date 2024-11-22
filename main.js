@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
  var img = document.createElement('img')
- img.src = './assets/Captura de pantalla 2024-08-03 151738.png'
+ img.src = './banner.png'
  img.alt = 'banner'
 
  img.classList.add('dynamic-image')
